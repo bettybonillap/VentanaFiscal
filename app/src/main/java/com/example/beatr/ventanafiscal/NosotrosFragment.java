@@ -12,6 +12,7 @@ import android.support.annotation.Nullable;
 import android.telephony.PhoneNumberUtils;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.TextureView;
@@ -44,17 +45,20 @@ public class NosotrosFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_nosotros, container, false);
     }
-    final SpannableStringBuilder sb = new SpannableStringBuilder("\n\n\n\n\n\n\n\n\n" +
-            "Sobre nosotros\n\n\n\n\n\n" +
-            "Somos un despacho contable que atiende personas físical y morales. Somos completamente honestos y apegados a las leyes fiscales." +
-            "\n\n\nPara cualquier asesoría o informes no dude en contactarnos.");
+    final SpannableStringBuilder sb = new SpannableStringBuilder("\n\n\n\n\n\n\n" +
+            " Acerca de nosotros" +" \n\n\n\n\n" +
+            "Somos un despacho contable que atiende personas físical y morales. Somos completamente honestos" +"\n"+ "y apegados a las leyes fiscales." +
+            "\n\n\n" + "Para cualquier asesoría o informes no dude en contactarnos.");
+
     final StyleSpan bss = new StyleSpan(android.graphics.Typeface.BOLD);
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         //imageView=(ImageView) view.findViewById(R.id.imageView2);
         textView=(TextView) view.findViewById(R.id.nosotros);
         imageButton=(ImageButton)view.findViewById(R.id.imageButtonC);
-        sb.setSpan(bss, 10, 23, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        sb.setSpan(bss, 8, 26, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        sb.setSpan(new RelativeSizeSpan(2f), 8,26, 0);
         textView.setText(sb);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override

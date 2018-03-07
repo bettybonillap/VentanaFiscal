@@ -1,4 +1,5 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,9 +7,125 @@
     tools:context="com.example.beatr.ventanafiscal.GuiaFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="guia" />
 
+    <ScrollView
+        android:layout_width="338dp"
+        android:layout_height="479dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="titulo"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/agendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="agendar"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/primero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="primero"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <TextView
+                android:id="@+id/segundo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="segundo" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/one" />
+
+            <TextView
+                android:id="@+id/tercero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/two" />
+
+            <TextView
+                android:id="@+id/cuarto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/three" />
+
+            <TextView
+                android:id="@+id/quinto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/four" />
+
+            <TextView
+                android:id="@+id/sexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="353dp"
+                android:layout_height="265dp"
+                android:src="@drawable/six" />
+
+            <TextView
+                android:id="@+id/septimo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="361dp"
+                android:layout_height="260dp"
+                android:src="@drawable/seven" />
+
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
